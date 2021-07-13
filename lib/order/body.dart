@@ -6,9 +6,10 @@ class MyorderBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("oreder"),
+          title: Text("order"),
           ),
           body: Allordersbody(),
           ),          

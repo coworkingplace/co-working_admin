@@ -15,9 +15,9 @@ class Choice {
 
 const List<Choice> choices = const <Choice>[
    const Choice(title: 'Category', icon: Icons.home,routename:MyCatbody.routeanme),
-   const Choice(title: 'places', icon: Icons.photo_album,routename:MyplaceBody.routename),
-   const Choice(title: 'oredr', icon: Icons.photo_album,routename:MyorderBody.routename),
-   const Choice(title: 'users', icon: Icons.contacts_sharp,routename:AllUserBody.routename),
+   const Choice(title: 'Places', icon: Icons.photo_album,routename:MyplaceBody.routename),
+   const Choice(title: 'Order', icon: Icons.photo_album,routename:MyorderBody.routename),
+   const Choice(title: 'Users', icon: Icons.contacts_sharp,routename:AllUserBody.routename),
   // const Choice(title: 'Map', icon: Icons.map),
   // const Choice(title: 'Phone', icon: Icons.phone),
   // const Choice(title: 'Camera', icon: Icons.camera_alt),

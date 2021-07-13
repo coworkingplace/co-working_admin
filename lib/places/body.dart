@@ -13,7 +13,11 @@ class _MyplaceBodyState extends State<MyplaceBody> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+              appBar: AppBar(
+        title: Text("Places"),
+      ),
               floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.amber,
         elevation: 9,

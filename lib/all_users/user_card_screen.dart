@@ -60,6 +60,7 @@ class _UserScreenState extends State<UserScreen> {
                                   SizedBox(
                                     height: 10,
                                   ),
+                                  //(snapshot.data.containsKey("firstname"))?
                                   Text(
                                     snapshot.data.documents[index]['firstname']
                                             .toUpperCase() +
@@ -71,20 +72,25 @@ class _UserScreenState extends State<UserScreen> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  //:Text(""),
+                                  
                                   SizedBox(
                                     height: 10,
                                   ),
+                                  // (snapshot.data.documents[index].containsKey('address'))?
                                   Text(snapshot.data.documents[index]
-                                      ['address']),
+                                      ['address']),//:Container(),
                                   SizedBox(
                                     height: 10,
                                   ),
-                                  Text(snapshot.data.documents[index]['email']),
+                                  // (snapshot.data.documents[index].containsKey('email'))?
+                                  Text(snapshot.data.documents[index]['email']),//:Container(),
                                   SizedBox(
                                     height: 10,
                                   ),
+                                  // (snapshot.data.documents[index].containsKey('phone number'))?
                                   Text(snapshot.data.documents[index]
-                                      ['phone number']),
+                                      ['phone number']),//:Container(),
                                   SizedBox(
                                     height: 10,
                                   ),

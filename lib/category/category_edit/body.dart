@@ -34,7 +34,12 @@ class MyCatEditBody extends StatelessWidget {
             ),
 
             Container(
-              child: MyEditPage(catNAME: catNAME,chipFilter: chipFilter,img: img,),
+              child: Column(
+                children: [
+                  Text("Edit category Info",style: TextStyle(fontWeight: FontWeight.bold),),
+                  MyEditPage(catNAME: catNAME,chipFilter: chipFilter,img: img,),
+                ],
+              ),
             )
 
             // Form(

@@ -57,6 +57,7 @@ class _MyAddPlacesPageState extends State<MyAddPlacesPage> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
+          Text("Add Place"),
           Padding(
             padding: EdgeInsets.all(8.0),
             child: TextFormField(
@@ -232,10 +233,12 @@ class _MyAddPlacesPageState extends State<MyAddPlacesPage> {
             storageReference.getDownloadURL().then((fileURL) {
               setState(() {
                 // print(fileURL);
-                uploadedFileURL.add(fileURL);// fileURL;//.toString();
+                uploadedFileURL.add(fileURL.toString());// fileURL;//.toString();
                 print("????????????!!!!!!!!!!!!!<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");
                 print(uploadedFileURL);
                 print("????????????!!!!!!!!!!!!!<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");
+                print("????????????!!!!!!!!!!!!!<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");
+                print("????????????!!!!!!!!!!!!!<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");print("????????????!!!!!!!!!!!!!<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");
               });
             });
             if (uploadedFileURL!=null) {
@@ -245,7 +248,8 @@ class _MyAddPlacesPageState extends State<MyAddPlacesPage> {
     'category_id':_mySelectionCategory,
     'overview':overview,
     'placeofcity':cityname,
-    'img':FieldValue.arrayUnion(uploadedFileURL)
+    // 'img':FieldValue.arrayUnion(uploadedFileURL)//https://firebasestorage.googleapis.com/v0/b/coworking-app-cd89c.appspot.com/o/WhatsApp%20Image%202021-07-12%20at%2010.18.00%20AM.jpeg?alt=media&token=8105e1c6-31c3-49c5-bb63-5b01f05c2d3f
+    'img':FieldValue.arrayUnion(["https://firebasestorage.googleapis.com/v0/b/coworking-app-cd89c.appspot.com/o/WhatsApp%20Image%202021-07-12%20at%2010.18.00%20AM.jpeg?alt=media&token=8105e1c6-31c3-49c5-bb63-5b01f05c2d3f"]),
   }).then((value) {
     print("${value.documentID}");
   
